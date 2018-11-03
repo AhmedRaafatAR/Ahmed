@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/player_card_view_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_row_background">
+
+        <ImageView
+            android:id="@+id/player_card_delete_icon"
+            android:layout_width="@dimen/ic_delete"
+            android:layout_height="@dimen/ic_delete"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/padd_10"
+            android:src="@drawable/trash_can_white_24"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/padd_10"
+            android:layout_toLeftOf="@+id/player_card_delete_icon"
+            android:text="@string/delete"
+            android:textColor="@color/colorText"
+            android:textSize="13sp"/>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/player_card_view_foreground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryLight"
+        android:padding="@dimen/padd_10">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/iv_player_picture"
+                android:layout_width="@dimen/thumbnail"
+                android:layout_height="@dimen/thumbnail"
+                android:background="@drawable/player_dribbling"
+                android:scaleType="centerCrop"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <TextView
+                android:id="@+id/tv_player_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kiley Buckmaster"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/text_size"
+                android:layout_marginStart="16dp"
+                app:layout_constraintLeft_toRightOf="@id/iv_player_picture"
+                app:layout_constraintTop_toBottomOf="@id/iv_player_picture"
+                app:layout_constraintBottom_toTopOf="@id/iv_player_picture"/>
+
+            <TextView
+                android:id="@+id/tv_player_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="47"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/colorPrimaryText"
+                android:layout_marginStart="4dp"
+                app:layout_constraintLeft_toRightOf="@id/tv_player_name"
+                app:layout_constraintBottom_toBottomOf="@id/tv_player_name"/>
+
+            <TextView
+                android:id="@+id/tv_goal_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Goals"
+                android:textSize="@dimen/text_size_small"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/colorPrimaryText"
+                app:layout_constraintLeft_toRightOf="@id/tv_player_number"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_goals_scored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="@dimen/text_size_small"
+                android:textColor="@color/colorPrimaryText"
+                app:layout_constraintTop_toBottomOf="@id/tv_goal_label"
+                app:layout_constraintLeft_toRightOf="@id/tv_goal_label"
+                app:layout_constraintRight_toLeftOf="@id/tv_goal_label"/>
+
+            <TextView
+                android:id="@+id/tv_assist_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Assits"
+                android:textSize="@dimen/text_size_small"
+                android:textColor="@color/colorPrimaryText"
+                android:layout_marginStart="8dp"
+                app:layout_constraintLeft_toRightOf="@id/tv_goal_label"
+                app:layout_constraintTop_toTopOf="@id/tv_goal_label"/>
+
+            <TextView
+                android:id="@+id/tv_assits_made"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="@dimen/text_size_small"
+                android:textColor="@color/colorPrimaryText"
+                app:layout_constraintTop_toBottomOf="@id/tv_assist_label"
+                app:layout_constraintLeft_toRightOf="@id/tv_assist_label"
+                app:layout_constraintRight_toLeftOf="@id/tv_assist_label"/>
+
+            <TextView
+                android:id="@+id/tv_saves_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Saves"
+                android:textSize="@dimen/text_size_small"
+                android:textColor="@color/colorPrimaryText"
+                android:layout_marginStart="8dp"
+                app:layout_constraintLeft_toRightOf="@id/tv_assist_label"
+                app:layout_constraintTop_toTopOf="@id/tv_assist_label"/>
+
+            <TextView
+                android:id="@+id/tv_saves_made"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="@dimen/text_size_small"
+                android:textColor="@color/colorPrimaryText"
+                app:layout_constraintTop_toBottomOf="@id/tv_saves_label"
+                app:layout_constraintLeft_toRightOf="@id/tv_saves_label"
+                app:layout_constraintRight_toLeftOf="@id/tv_saves_label"/>
+
+        </android.support.constraint.ConstraintLayout>
+
+    </FrameLayout>
+
+</FrameLayout>

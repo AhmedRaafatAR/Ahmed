@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">Coaches Corner</string>
+    <string name="settings">Settings</string>
+    <string name="cc_menu_team_settings">Team Settings</string>
+    <string name="cc_menu_add_player">Add a player</string>
+    <string name="cc_menu_add_game">Add a game</string>
+    <string name="cc_menu_league_settings">League Settings</string>
+
+    <string name="gameformat_prompt">Select a Game format</string>
+    <string name="half_quarter_prompt">Select One</string>
+    <string name="age_group_prompt">Select Age Group</string>
+    <string name="delete">DELETE</string>
+
+    <string-array name="gameformat">
+        <item>@string/u6_under_game_formation</item>
+        <item>5v5</item>
+        <item>@string/u8_under_game_formation</item>
+        <item>7v7</item>
+        <item>@string/u11_under_game_formation</item>
+        <item>9v9</item>
+        <item>@string/u13_under_game_formation</item>
+        <item>@string/u16_under_game_formation</item>
+    </string-array>
+
+    <string-array name="half_quarter">
+        <item>@string/game_half</item>
+        <item>@string/game_quarter</item>
+    </string-array>
+
+    <string name="game_half">Half</string>
+    <string name="game_quarter">Quarter</string>
+
+    <string-array name="age_group">
+        <item>U3</item>
+        <item>U4</item>
+        <item>U5</item>
+        <item>U6</item>
+        <item>U7</item>
+        <item>U8</item>
+        <item>U9</item>
+        <item>U10</item>
+        <item>U11</item>
+        <item>U12</item>
+        <item>U13</item>
+        <item>U14</item>
+        <item>U15</item>
+        <item>U16</item>
+    </string-array>
+
+    <string-array name="home_or_away">
+        <item>Home</item>
+        <item>Away</item>
+    </string-array>
+
+    <string name="u6_under_game_formation">4v4</string>
+    <string name="u8_under_game_formation">6v6</string>
+    <string name="u11_under_game_formation">8v8</string>
+    <string name="u13_under_game_formation">10v10</string>
+    <string name="u16_under_game_formation">11v11</string>
+
+    <string name="gd_reset_timer">Reset Timer</string>
+    <string name="gd_share_score_card">Share Score Card</string>
+
+
+</resources>
